@@ -1,0 +1,82 @@
+%-------------------------------------
+% Academic CV style (XeLaTeX)
+% Author:  Roy Kisluk
+% Clean, centered, full-width academic format
+% Reuses the Sabon/Calluna fonts shipped in ./Fonts
+% License: MIT
+%-------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cv}[2026/05/25 Academic CV style]
+
+% -------------------- Page geometry --------------------
+\usepackage[a4paper, top=1.6cm, bottom=1.8cm, left=2.2cm, right=2.2cm]{geometry}
+
+% -------------------- Packages --------------------
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{fontspec}
+
+% -------------------- Fonts --------------------
+\setmainfont{SabonLTStd}[
+    Path=./Fonts/Sabon/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+\newfontfamily\Calluna{Calluna}[
+    Path=./Fonts/Calluna/,
+    Extension = .otf,
+    UprightFont=*-Regular
+    ]
+
+% -------------------- Section headers --------------------
+% Clean bold header with a thin rule underneath (academic look)
+\titleformat{\section}
+  {\large\bfseries\raggedright}{}{0em}{}[\vspace{2pt}\hrule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+
+% -------------------- CV entry --------------------
+% #1 bold title (left)  #2 location (right)
+% #3 italic subtitle (left)  #4 dates (right)
+\newcommand{\cventry}[4]{%
+  \renewcommand{\arraystretch}{1.15}%
+  \noindent\begin{tabularx}{\textwidth}{@{}X@{}r@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\par\vspace{-1pt}%
+}
+
+% Two-field entry (title left, dates right) for single-line items
+\newcommand{\cvline}[2]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X@{}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}\par\vspace{-1pt}%
+}
+
+% Teaching course line: #1 bold year (fixed column), #2 course (wraps, indented)
+\newcommand{\teachentry}[2]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}p{2.4cm}@{}X@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}\par\vspace{2pt}%
+}
+
+% Annotation line under an entry (thesis, advisor, etc.)
+\newcommand{\cvnote}[1]{{\small #1}\par\vspace{3pt}}
+
+% -------------------- Lists --------------------
+\newcommand{\cvItems}{\begin{itemize}[leftmargin=1.3em, itemsep=1pt, topsep=2pt, parsep=0pt]}
+\newcommand{\cvItemsEnd}{\end{itemize}\vspace{2pt}}
+
+\newcommand{\cvEnum}{\begin{enumerate}[leftmargin=1.6em, itemsep=4pt, topsep=2pt, parsep=0pt]}
+\newcommand{\cvEnumEnd}{\end{enumerate}\vspace{2pt}}
+
+% Plain list with no bullets (skills, languages)
+\newcommand{\cvPlain}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=2pt, topsep=2pt, parsep=0pt]}
+\newcommand{\cvPlainEnd}{\end{itemize}\vspace{2pt}}
