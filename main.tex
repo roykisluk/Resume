@@ -1,0 +1,129 @@
+%-------------------------------------
+% Resume in LaTeX (XeLaTeX)
+% Author:  Roy Kisluk
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Based on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+\usepackage{hyperref} % hyperlinks package
+\pagenumbering{gobble} % disable page numbering
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna Tel-Aviv, Israel}
+  \item {\Calluna (+972) 054-201-4734}  % Phone number
+  \item {\href{mailto:roy.kisluk@gmail.com}{roy.kisluk@gmail.com}} % E-mail address
+  \item {\href{https://www.linkedin.com/in/roykisluk/}{linkedin.com/in/roykisluk/}}
+\end{flushright}\vspace{-30pt}
+
+\begin{flushleft}  
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Roy Kisluk}}\\[2pt]
+    {\Calluna \fontsize{11pt}{11pt}\selectfont \textit{Economist (M.A.) | Quantitative Modeling, Econometrics \& Data Analysis (Python/R)}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Berglas School of Economics, Tel-Aviv University}{Tel-Aviv, Israel}
+  {M.A. in Economics (Magna Cum Laude)}{2023 - 2025} %\footnotesize{\textit{(expected)}}}
+\itemListStart
+    \myItem{Thesis—Structural Transformation in Israel (Supervisor: Dr. Tomer Ifergane). Developed and estimated a structural model (adapted from \textit{Cravino, 2022}) and applied econometric methods to CBS Household Expenditure Survey microdata to identify income- and demographic-driven reallocations between goods and services}
+    \myItem{Sergio Grywac Prize for Jewish-Arab Relations in Israel}
+    \myItem{Excellence Scholarship for Graduate Students, Faculty of Social Sciences}
+\itemListEnd
+\eduHeading
+  {Berglas School of Economics, Tel-Aviv University}{Tel-Aviv, Israel}
+  {B.A. in Economics and Management (Magna Cum Laude)}{2019 - 2022}
+
+}
+
+% -------------------- EXPERIENCE --------------------
+\sectionBlock{
+\section{Experience}
+}{
+\eduHeading
+  {BDO Consulting}{Tel-Aviv, Israel}
+  {Analyst}{2025 - 2026} %{2025.12 - }
+\itemListStart
+    \myItem{Manage and analyze large-scale datasets to support market assessments and project feasibility}
+    \myItem{Conduct economic modeling and quantitative analysis to assess energy pricing, supply-demand dynamics, and policy impacts}
+    \myItem{Develop technical reports and presentations for energy sector clients, translating data into clear strategic insights}
+    \myItem{Develop energy demand and price forecasts to support long-term strategic planning}
+\itemListEnd
+\eduHeading
+  {Tel-Aviv University and Reichman University}{Tel-Aviv, Israel}
+  {Teaching Assistant and Private Tutor}{2024 - 2026} %{2024.10 - 2025.09}
+\itemListStart
+    \myItem{Teaching Assistant: macroeconomics for M.A., macroeconomics, microeconomics, and econometrics for B.A.}
+    \myItem{Private Tutor: math, statistics, econometrics, microeconomics, and macroeconomics}
+\itemListEnd
+
+
+\eduHeading
+  {Stonehenge Digital}{Ra'anana, Israel}
+  {Project Manager, Analyst}{2018 - 2026} %{2018.04 - Present}
+\itemListStart
+    \myItem{Product management for inhouse software: multi-platform data scraping, automation, and LLM integrations}
+    \myItem{Manage client training internationally for technological systems}
+    \myItem{Development of automated web modules using Python and Selenium, virtual machines infrastructure, and cryptocurrency payment systems}
+    \myItem{Data analysis and research for BI projects}
+\itemListEnd
+
+}
+
+% -------------------- PROJECTS --------------------
+% \sectionBlock{
+% \section{Projects}
+% }{
+% \eduHeading
+%   {Scraping and Automation Projects}{ }
+%   {Based on Python, Selenium}{}
+% \itemListStart
+%   \myItem{Scraping of datasets from government websites}
+%   \myItem{Scraping of legal documents from court websites}
+%   \myItem{Automation scripts for Reddit}
+% \itemListEnd
+% \eduHeading
+%   {Excel-based Simulators}{}
+%   {Simulations of investment strategies}{}
+% \itemListStart 
+%     \myItem{Simulations and predictions of investment strategies for elderly individuals, following amendment 190 to the Income Tax Ordinance}
+% \itemListEnd
+% }
+
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: English, Hebrew
+\item \emph{Tech skills}: Python, R, Julia, MATLAB, C++, C\#, Excel, LaTeX
+% {\Courier \fontsize{11pt}{11pt}\selectfont Python}, {\Courier \fontsize{11pt}{11pt}\selectfont R}, {\Courier \fontsize{11pt}{11pt}\selectfont MATLAB}, {\Courier \fontsize{11pt}{11pt}\selectfont C++}, {\Courier \fontsize{11pt}{11pt}\selectfont Excel}, {\Courier \fontsize{11pt}{11pt}\selectfont LaTeX}.
+\skillListEnd
+}
+
+% -------------------- Military Service --------------------
+\sectionBlock{
+\section{Military Service}
+}{
+\eduHeading
+{Combat Soldier}{}
+{Givati Brigade, Infantry} {2014 - 2018} %{2014.10 - 2018.05}
+}
+
+
+\end{document}

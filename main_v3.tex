@@ -1,0 +1,116 @@
+%-------------------------------------
+% Academic CV (v3) in LaTeX (XeLaTeX)
+% Author:  Roy Kisluk
+% Compile: xelatex main_v3.tex
+% Style:   cv.sty  (clean, centered academic format)
+%-------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{cv}        % Academic CV style package
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+\pagenumbering{gobble}
+
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{center}
+  {\Calluna\fontsize{26pt}{26pt}\selectfont Roy Kisluk}\\[4pt]
+  {\large Curriculum Vitae}\\[6pt]
+  \href{mailto:roy.kisluk@gmail.com}{roy.kisluk@gmail.com} \;\textbullet\;
+  \href{https://www.linkedin.com/in/roykisluk/}{linkedin.com/in/roykisluk} \;\textbullet\;
+  (+972)\,054-201-4734 \;\textbullet\; Tel-Aviv, Israel
+\end{center}
+\vspace{4pt}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\cventry
+{Berglas School of Economics, Tel-Aviv University}{Tel-Aviv, Israel}
+{Ph.D. in Economics --- Advisor: Dr.\ Tomer Ifergane}{2026 -- 2030 (expected)}
+\cvnote{Fields: Macroeconomics, Labor Economics, and Firm Dynamics.}
+
+\cventry
+{Berglas School of Economics, Tel-Aviv University}{Tel-Aviv, Israel}
+{M.A. in Economics (Magna Cum Laude)}{2023 -- 2025}
+\cvnote{M.A. thesis published in \textit{The Economic Quarterly} (2026).}
+
+\cventry
+{Berglas School of Economics, Tel-Aviv University}{Tel-Aviv, Israel}
+{B.A. in Economics and Management (Magna Cum Laude)}{2019 -- 2022}
+
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+\cvEnum
+\item Ifergane, T., \textbf{Kisluk, R.}, and Dayan, I. (2026). ``Structural Transformation in
+Israel: Demographic Changes and Economic Growth.'' \textit{The Economic Quarterly} (in Hebrew).
+\cvEnumEnd
+
+% -------------------- PRESENTATIONS --------------------
+\section{Presentations \& Conferences}
+\cvPlain
+\item \textbf{2026}\quad The Israeli Economic Association Annual Conference (42nd), June 18 ---
+``Structural Transformation in Israel: Demographic Changes and Economic Growth'' (presenter).
+\cvPlainEnd
+
+% -------------------- TEACHING --------------------
+\section{Teaching Experience}
+\teachentry{2025 -- 2026}{Microeconomics III: Information, Market Power, Game Theory (B.A.) --- Reichman University}
+\teachentry{2025 -- 2026}{Introduction to Econometrics (B.A., International Program) --- Reichman University}
+\teachentry{2024 -- 2025}{Macroeconomic Theory II (M.A.) --- Tel-Aviv University}
+\teachentry{2024 -- 2025}{Macroeconomics: Growth, Business Cycles, Crises, Policy (B.A.) --- Tel-Aviv University}
+\noindent\textbf{Private tutoring}\hfill \textit{2024 -- 2026}\par\vspace{2pt}
+\cvPlain
+\item Mathematics, Statistics, Econometrics, Microeconomics, and Macroeconomics
+\cvPlainEnd
+
+% -------------------- RESEARCH & PROFESSIONAL EXPERIENCE --------------------
+\section{Research \& Professional Experience}
+\cventry
+{Ministry of Finance --- Department of the Chief Economist}{Jerusalem, Israel}
+{Doctoral Researcher}{2026 -- }
+\cvItems
+\item Economic research and quantitative analysis conducted as part of doctoral studies.
+\cvItemsEnd
+
+\cventry
+{BDO Consulting}{Tel-Aviv, Israel}
+{Analyst}{2025 -- 2026}
+\cvItems
+\item Conducted economic modeling and quantitative analysis of energy pricing, supply--demand dynamics, and policy impacts.
+\item Built energy demand and price forecasts to support long-term strategic planning.
+\item Managed and analyzed large-scale datasets for market assessments and feasibility studies; authored technical reports for energy-sector clients.
+\cvItemsEnd
+
+\cventry
+{Stonehenge Digital}{Ra'anana, Israel}
+{Project Manager, Analyst (part-time)}{2018 -- 2026}
+\cvItems
+\item Managed product development for in-house software: large-scale data collection (web scraping), automation, and LLM integrations.
+\item Developed automated web-data modules (Python, Selenium) and backend infrastructure (virtual machines, cryptocurrency payment systems).
+\item Led data analysis and research for BI projects and international client training.
+\cvItemsEnd
+
+% -------------------- AWARDS, GRANTS & HONORS --------------------
+\section{Awards, Grants \& Honors}
+\cvPlain
+\item \textbf{Sergio Grywac Prize} for Jewish--Arab Relations in Israel \hfill 2025
+\item \textbf{Excellence Scholarship} for Graduate Students, Faculty of Social Sciences \hfill 2023 -- 2025
+\item \textbf{Magna Cum Laude} --- M.A. in Economics, Tel-Aviv University \hfill 2025
+\item \textbf{Magna Cum Laude} --- B.A. in Economics and Management, Tel-Aviv University \hfill 2022
+\cvPlainEnd
+
+% -------------------- SKILLS --------------------
+\section{Computer Skills \& Languages}
+\cvPlain
+\item \textbf{Programming \& tools:} Python, R, Julia, MATLAB, C++, C\#, Excel, LaTeX
+\item \textbf{Languages:} Hebrew (native), English (fluent)
+\cvPlainEnd
+
+% -------------------- MILITARY SERVICE --------------------
+\section{Military Service}
+\cventry
+{Israel Defense Forces --- Givati Brigade (Infantry)}{Israel}
+{Combat Soldier}{2014 -- 2018}
+
+\end{document}
