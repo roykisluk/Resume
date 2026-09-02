@@ -67,6 +67,13 @@
   \end{tabularx}\par\vspace{2pt}%
 }
 
+% Award / honor line: #1 description (wraps, ragged right), #2 year (right column)
+\newcommand{\awardentry}[2]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}X@{}r@{}}
+    \hyphenpenalty=10000 #1 & #2 \\
+  \end{tabularx}\par\vspace{2pt}%
+}
+
 % Annotation line under an entry (thesis, advisor, etc.)
 \newcommand{\cvnote}[1]{{\small #1}\par\vspace{3pt}}
 
