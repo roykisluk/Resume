@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.19)  2 SEP 2026 15:24
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.19)  3 NOV 2026 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,10 +481,10 @@ Package rerunfilecheck Info: File `Roy_Kisluk_Resume.out' has not changed.
 Here is how much of TeX's memory you used:
  12038 strings out of 468168
  238985 string characters out of 5432815
- 722380 words of memory out of 5000000
+ 723380 words of memory out of 5000000
  40646 multiletter control sequences out of 15000+600000
  628257 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,9n,107p,304b,331s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,9n,107p,304b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Roy_Kisluk_Resume.pdf (2 pages).
