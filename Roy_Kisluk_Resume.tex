@@ -3,7 +3,7 @@
 % Academic CV (v3) in LaTeX (XeLaTeX)
 % Author:  Roy Kisluk
 % Compile: xelatex Roy_Kisluk_Resume.tex
-% Web CV (no phone, no Ministry entry):
+% Web CV (no phone):
 %   xelatex -jobname=Roy_Kisluk_CV_web "\def\webcv{}\input{Roy_Kisluk_Resume}"
 % Style:   cv.sty  (clean, centered academic format)
 %-------------------------------------
@@ -67,14 +67,12 @@ Israel: Demographic Changes and Economic Growth.'' \textit{The Economic Quarterl
 
 % -------------------- RESEARCH & PROFESSIONAL EXPERIENCE --------------------
 \section{Research \& Professional Experience}
-\ifdefined\webcv\else % web CV leaves this out (Scholarship rule: never imply working at the Ministry)
 \cventry
 {Ministry of Finance --- Department of the Chief Economist}{Jerusalem, Israel}
 {Doctoral Researcher}{2026 -- }
 \cvItems
 \item Economic research and quantitative analysis conducted as part of doctoral studies.
 \cvItemsEnd
-\fi
 
 \cventry
 {BDO Consulting --- Economy and Environment}{Tel-Aviv, Israel}
