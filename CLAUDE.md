@@ -72,3 +72,7 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   Expenditure Survey), the two award bullets (already in Honors), and the B.A. line "Corporate Finance
   program; seminars in Bayesian Games and Behavioral Finance; project in Strategic Business Consulting".
 - **Gotcha:** saving an education entry opens a "People you may know" popup; close it with the X.
+- **Same day (Roy):** Reichman course is "Econometrics" (not "Introduction to Econometrics") on the CV, the site
+  and LinkedIn. LinkedIn's Excellence Scholarship lost its "May 2025" date; "2023 – 2025" is in its description,
+  like the doctoral awards. **Publication date not set:** LinkedIn's publication date field takes only a full
+  mm/dd/yyyy, and the paper has no issue date yet.
