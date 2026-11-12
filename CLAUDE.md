@@ -49,3 +49,17 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
 - **Symptom:** the BDO header sat at the foot of page 1 with its bullets on page 2.
   **Cause:** `\cventry` allowed a page break between the header and the list under it.
   **Fix:** `\nopagebreak` in `\cventry` and `beginpenalty=10000` in `\cvItems` (`cv.sty`).
+
+### 2026-11-12 — LinkedIn updated from the CV (Roy)
+- **What:** headline, About, all experience, education (Ph.D. added, cum laude grades), publication (links to the
+  site's paper PDF), two doctoral awards, six skills, website in contact info, photo = `Roybox/portrait-final.png`
+  (the site portrait at full size). "Notify network" stayed off and every "share this update" prompt was skipped.
+  When the CV changes, update LinkedIn too.
+- **Gotchas:** (1) the main profile page lazy-loads sections, so Honors, Skills and Languages looked empty and two
+  honors got added twice → **read `/details/<section>/` before adding anything**. (2) Honors with a year only show
+  as "Jan YYYY", so the doctoral awards have no date (years are in the description). Experience and education
+  show year-only dates correctly. (3) Every new or edited role offers to change the headline to that role: pick
+  "(current)". (4) The photo "Upload photo" button builds its file input on click → patch
+  `HTMLInputElement.prototype.click` to attach the input instead of opening the picker, then `file_upload`, then
+  restore. (5) Typing into textareas sometimes drops letters; `form_input` plus one keystroke is reliable.
+- **Left as Roy had it:** Languages (English listed as native), Dean's List, the M.A. description.
