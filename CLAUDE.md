@@ -40,8 +40,12 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   the title linked to the paper on the site; "Updated <month> <year>" at the end comes from the build date.
 - **Work in Progress uses the "with ..." form** because the author order of that paper is not set.
 - **Open:** roykisluk.com sits behind a Cloudflare Access login (checked with curl, 2026-11-12), so the CV's
-  site and paper links do not open for outsiders until the site goes public. The Economic Quarterly entry has
-  no volume or pages; the paper PDF does not show them.
+  site and paper links do not open for outsiders until the site goes public. Roy keeps both links
+  pointing at the site.
+- **Economic Quarterly, no volume or pages yet:** ieca.org.il lists the paper under "accepted for publication"
+  (מאמרים שהתקבלו לפרסום); the latest issue is vol. 69 (2025) and the paper is not in it. Roy keeps "2026"
+  rather than "forthcoming". Add volume and pages when the 2026 issue appears. The journal hosts a public PDF:
+  `https://ieca.org.il/wp-content/uploads/2026/07/Structual_transformation_IL-5.pdf`.
 - **Symptom:** the BDO header sat at the foot of page 1 with its bullets on page 2.
   **Cause:** `\cventry` allowed a page break between the header and the list under it.
   **Fix:** `\nopagebreak` in `\cventry` and `beginpenalty=10000` in `\cvItems` (`cv.sty`).
