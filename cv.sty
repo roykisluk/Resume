@@ -50,7 +50,7 @@
   \noindent\begin{tabularx}{\textwidth}{@{}X@{}r@{}}
     \textbf{#1} & #2 \\
     \textit{#3} & \textit{#4} \\
-  \end{tabularx}\par\vspace{-1pt}%
+  \end{tabularx}\par\nopagebreak\vspace{-1pt}%
 }
 
 % Two-field entry (title left, dates right) for single-line items
@@ -78,7 +78,7 @@
 \newcommand{\cvnote}[1]{{\small #1}\par\vspace{3pt}}
 
 % -------------------- Lists --------------------
-\newcommand{\cvItems}{\begin{itemize}[leftmargin=1.3em, itemsep=1pt, topsep=2pt, parsep=0pt]}
+\newcommand{\cvItems}{\begin{itemize}[leftmargin=1.3em, itemsep=1pt, topsep=2pt, parsep=0pt, beginpenalty=10000]}
 \newcommand{\cvItemsEnd}{\end{itemize}\vspace{2pt}}
 
 \newcommand{\cvEnum}{\begin{enumerate}[leftmargin=1.6em, itemsep=4pt, topsep=2pt, parsep=0pt]}

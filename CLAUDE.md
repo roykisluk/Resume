@@ -31,3 +31,17 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   committed from another session), then copied to the site.
 - **Fix:** rebased onto the remote and rebuilt. The `\webcv` switch and `Roy_Kisluk_CV_web.pdf` are gone
   because Roy chose a single version with no phone number. Before rebuilding the CV, run `git pull`.
+
+### 2026-11-12 — academic pass on the CV (Roy's choices, so they are not re-argued)
+- **Kept on purpose:** the Gmail address (a TAU address expires one day), C# in skills, one
+  "Research & Professional Experience" heading, all three Stonehenge bullets. BDO bullets are Roy's wording.
+- **Changed:** Work in Progress section added; Awards moved above Presentations and Teaching; cum laude
+  lines removed from Awards (they are in Education); private tutoring removed; publication in AEA style with
+  the title linked to the paper on the site; "Updated <month> <year>" at the end comes from the build date.
+- **Work in Progress uses the "with ..." form** because the author order of that paper is not set.
+- **Open:** roykisluk.com sits behind a Cloudflare Access login (checked with curl, 2026-11-12), so the CV's
+  site and paper links do not open for outsiders until the site goes public. The Economic Quarterly entry has
+  no volume or pages; the paper PDF does not show them.
+- **Symptom:** the BDO header sat at the foot of page 1 with its bullets on page 2.
+  **Cause:** `\cventry` allowed a page break between the header and the list under it.
+  **Fix:** `\nopagebreak` in `\cventry` and `beginpenalty=10000` in `\cvItems` (`cv.sty`).
