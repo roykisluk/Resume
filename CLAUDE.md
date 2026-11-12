@@ -63,3 +63,12 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   `HTMLInputElement.prototype.click` to attach the input instead of opening the picker, then `file_upload`, then
   restore. (5) Typing into textareas sometimes drops letters; `form_input` plus one keystroke is reliable.
 - **Left as Roy had it:** Languages (English listed as native), Dean's List, the M.A. description.
+
+### 2026-11-12 — LinkedIn education made to match the CV (Roy)
+- **Changed:** M.A. and B.A. now show years only (were Oct–Sep months); degrees renamed "Master of Arts" /
+  "Bachelor of Arts"; descriptions follow the CV ("Eitan Berglas School of Economics. Advisor: ..." and the
+  thesis line for the M.A.; school only for the B.A.). This replaces the earlier "left as Roy had it" note
+  for the M.A. description. Dropped text: the M.A. thesis summary (Cravino 2022 model, CBS Household
+  Expenditure Survey), the two award bullets (already in Honors), and the B.A. line "Corporate Finance
+  program; seminars in Bayesian Games and Behavioral Finance; project in Strategic Business Consulting".
+- **Gotcha:** saving an education entry opens a "People you may know" popup; close it with the X.
