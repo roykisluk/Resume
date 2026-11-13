@@ -95,3 +95,6 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   unused `myresume.sty` deleted, `Fonts/` removed from all history (same paused-ruleset force-push) and
   git-ignored. Old commits no longer build, which is fine. Lesson: show font choices as vector PDFs, not PNGs
   (Roy found the 110 dpi comparison "really low res").
+- **Same day, LinkedIn (Roy):** contact info gained `https://github.com/roykisluk` as a second website, type
+  "Portfolio" (LinkedIn lists it above roykisluk.com, Personal; the order is LinkedIn's). Form is at
+  `/in/roykisluk/overlay/contact-info/` → "Edit contact info" (`/edit/contact-info/` 404s).
