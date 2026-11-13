@@ -1,6 +1,6 @@
 # Resume (LaTeX CV)
 
-Build: `xelatex Roy_Kisluk_Resume.tex` (XeLaTeX only — fonts come from ./Fonts).
+Build: `xelatex Roy_Kisluk_Resume.tex` (XeLaTeX only). Font: EB Garamond from TeX Live; no font files in the repo.
 Style macros live in `cv.sty`.
 
 One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roykisluk.com
@@ -88,4 +88,10 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
 - **Rules:** never commit a PDF or source that contains the phone, since the repo is public. Any older clone
   must be reset, not pulled, or its next pull merges the old history back in. Old commits may stay viewable by
   direct link until GitHub cleans them up; GitHub Support can purge them if that matters.
-- **Open:** the repo also publishes commercial fonts (Sabon, Calluna, Cronos) under `Fonts/`. Not touched.
+- **Same day, fonts (Roy):** the repo also published commercial fonts (Sabon, Calluna, Cronos, Courier New)
+  under `Fonts/`. Roy picked EB Garamond (OFL, in TeX Live on the Mac and tbox) out of four rendered options
+  (Sabon, EB Garamond + Spectral name, Spectral as on the site, EB Garamond only). `Scale=1.1` keeps the
+  old size: unscaled EB Garamond sets ~10% smaller than Sabon. Still 2 pages, no overfull lines. `Fonts/` and the
+  unused `myresume.sty` deleted, `Fonts/` removed from all history (same paused-ruleset force-push) and
+  git-ignored. Old commits no longer build, which is fine. Lesson: show font choices as vector PDFs, not PNGs
+  (Roy found the 110 dpi comparison "really low res").

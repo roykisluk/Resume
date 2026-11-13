@@ -2,7 +2,7 @@
 % Academic CV style (XeLaTeX)
 % Author:  Roy Kisluk
 % Clean, centered, full-width academic format
-% Reuses the Sabon/Calluna fonts shipped in ./Fonts
+% Font: EB Garamond from TeX Live (no font files in this repo)
 % License: MIT
 %-------------------------------------
 
@@ -22,18 +22,14 @@
 \usepackage{fontspec}
 
 % -------------------- Fonts --------------------
-\setmainfont{SabonLTStd}[
-    Path=./Fonts/Sabon/,
-    Extension = .ttf,
+% EB Garamond (OFL, ships with TeX Live); scaled to match the size of the old Sabon layout
+\setmainfont{EBGaramond}[
+    Scale = 1.1,
+    Extension = .otf,
     UprightFont=*-Regular,
     BoldFont=*-Bold,
     ItalicFont=*-Italic,
     BoldItalicFont=*-BoldItalic
-    ]
-\newfontfamily\Calluna{Calluna}[
-    Path=./Fonts/Calluna/,
-    Extension = .otf,
-    UprightFont=*-Regular
     ]
 
 % -------------------- Section headers --------------------
