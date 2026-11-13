@@ -76,3 +76,16 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   and LinkedIn. LinkedIn's Excellence Scholarship lost its "May 2025" date; "2023 – 2025" is in its description,
   like the doctoral awards. **Publication date not set:** LinkedIn's publication date field takes only a full
   mm/dd/yyyy, and the paper has no issue date yet.
+
+### 2026-11-13 — phone number scrubbed from the public repo's history (Roy)
+- **Symptom:** this repo is public, and old commits still held Roy's phone in `.tex` files and 13 old PDF versions
+  (Roy_Kisluk_Resume.pdf, main_v2/v3.pdf), from before the no-phone CV. Found while adding GitHub to roykisluk.com.
+- **Fix:** `git filter-repo` on a fresh clone: `--strip-blobs-with-ids` (PDF versions whose `pdftotext` showed the
+  number; `pdftotext` is needed because the PDF text is compressed) and `--replace-text` (number → `PHONE-REMOVED`). All 29 commits kept;
+  current files unchanged except the old grep commands in this log (`grep 4734` → `grep PHONE`). Force-push needed
+  the ruleset `protect-main` (id 17504128) paused for a minute, then set back to active (checked). The tbox clone
+  `~/Resume` was reset to the new history; it held nothing unique.
+- **Rules:** never commit a PDF or source that contains the phone, since the repo is public. Any older clone
+  must be reset, not pulled, or its next pull merges the old history back in. Old commits may stay viewable by
+  direct link until GitHub cleans them up; GitHub Support can purge them if that matters.
+- **Open:** the repo also publishes commercial fonts (Sabon, Calluna, Cronos) under `Fonts/`. Not touched.
