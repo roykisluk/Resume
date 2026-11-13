@@ -82,7 +82,7 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   (Roy_Kisluk_Resume.pdf, main_v2/v3.pdf), from before the no-phone CV. Found while adding GitHub to roykisluk.com.
 - **Fix:** `git filter-repo` on a fresh clone: `--strip-blobs-with-ids` (PDF versions whose `pdftotext` showed the
   number; `pdftotext` is needed because the PDF text is compressed) and `--replace-text` (number → `PHONE-REMOVED`). All 29 commits kept;
-  current files unchanged except the old grep commands in this log (`grep 4734` → `grep PHONE`). Force-push needed
+  current files unchanged except the old grep commands in this log (the grep for the last four digits now greps `PHONE`). Force-push needed
   the ruleset `protect-main` (id 17504128) paused for a minute, then set back to active (checked). The tbox clone
   `~/Resume` was reset to the new history; it held nothing unique.
 - **Rules:** never commit a PDF or source that contains the phone, since the repo is public. Any older clone
