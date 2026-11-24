@@ -1,3 +1,6 @@
 /.DS_Store
 /sample.pdf
 /Fonts/
+*.aux
+*.log
+*.out
