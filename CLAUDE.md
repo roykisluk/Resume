@@ -105,4 +105,5 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
   Progress paper is now "Uneven Outside Options: The Distributional Consequences of Sectoral Growth" on the CV and
   the homepage (`Website/site/index.html`). LinkedIn does not list the paper anywhere.
 - **Gotcha:** re-saving the BDO role on LinkedIn turned its year-only dates ("2025 – 2026") into "Nov 2025 – Nov 2026",
-  because the form's month dropdowns save whatever they hold. Roy said to leave the year question alone.
+  because the form's month dropdowns held "November" and saved it. **Fix:** set both month dropdowns back to
+  "Month" (`form_input`) and save; the role shows "2025 – 2026" again (Roy). Check the month boxes on every role edit.
