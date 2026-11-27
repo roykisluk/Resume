@@ -98,3 +98,11 @@ One version only (2026-11-12, Roy): no phone number, so the same PDF goes on roy
 - **Same day, LinkedIn (Roy):** contact info gained `https://github.com/roykisluk` as a second website, type
   "Portfolio" (LinkedIn lists it above roykisluk.com, Personal; the order is LinkedIn's). Form is at
   `/in/roykisluk/overlay/contact-info/` → "Edit contact info" (`/edit/contact-info/` 404s).
+
+### 2026-11-27 — BDO title, paper renamed (Roy)
+- **Changed:** BDO title "Analyst" → "Consultant" on the CV and LinkedIn. Roy's employment form gives the role as
+  יועץ כלכלי/פיננסי with grade "associate"; the grade stays off because it is a pay band, not a title. The Work in
+  Progress paper is now "Uneven Outside Options: The Distributional Consequences of Sectoral Growth" on the CV and
+  the homepage (`Website/site/index.html`). LinkedIn does not list the paper anywhere.
+- **Gotcha:** re-saving the BDO role on LinkedIn turned its year-only dates ("2025 – 2026") into "Nov 2025 – Nov 2026",
+  because the form's month dropdowns save whatever they hold. Roy said to leave the year question alone.
